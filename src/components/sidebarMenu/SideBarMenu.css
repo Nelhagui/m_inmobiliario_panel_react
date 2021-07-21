@@ -1,0 +1,16 @@
+.content_sidebarnav{
+    border: 1px solid black;
+    min-width: 180px;
+
+}
+.content_sidebarnav nav {
+}
+.content_sidebarnav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    list-style: none;
+}
+.content_sidebarnav a {
+    margin: .7rem;
+}

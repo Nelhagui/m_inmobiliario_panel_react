@@ -1,0 +1,12 @@
+.navTop{
+    border: 1px solid black;
+}
+.navTop ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+.navTop a {
+    margin: 0 1rem;
+}
