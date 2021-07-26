@@ -1,4 +1,19 @@
 .buttonPage.active {
-    background-color: #6d6d6d;
-    color: rgb(255 255 255);
+    background-color: #ebebeb;
+    color: rgb(40 40 40);
+}
+
+.buttonPage {
+    margin: 0 0.2rem;
+    width: 33px;
+    border-radius: 50%;
+    height: 33px;
+    border: none;
+    background: none;
+}
+
+.buttonPage.hov:hover {
+    cursor: pointer;
+    background: #f5f5f5ed;
+    transition-duration: 0.3s;
 }

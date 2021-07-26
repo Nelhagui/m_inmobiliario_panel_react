@@ -5,6 +5,7 @@ import TableRow from "@material-ui/core/TableRow";
 import TableCell from "@material-ui/core/TableCell";
 import TableBody from "@material-ui/core/TableBody";
 import "./PostTable.css";
+import { Link } from "react-router-dom";
 
 export const PostTable = ({ data }) => {
     return (
@@ -17,6 +18,7 @@ export const PostTable = ({ data }) => {
                         <TableCell>Usuario</TableCell>
                         <TableCell>Tags</TableCell>
                         <TableCell>Estado</TableCell>
+                        <TableCell>Acción</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
@@ -35,6 +37,11 @@ export const PostTable = ({ data }) => {
                                                   ? "Pendiente revisión"
                                                   : "Publicado"))
                                     }
+                                </TableCell>
+                                <TableCell>
+                                    <Link to={`/entrada/editar/${fila.id}`}>
+                                        Editar
+                                    </Link>
                                 </TableCell>
                             </TableRow>
                         );

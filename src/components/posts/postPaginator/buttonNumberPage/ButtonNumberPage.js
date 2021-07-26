@@ -9,17 +9,18 @@ export const ButtonNumberPage = ({ itemPage }) => {
     const clickUrl = (inUrl) => changeUrl(inUrl);
     let label =
         itemPage.label === "Next &raquo;"
-            ? "Siguiente"
+            ? ">"
             : itemPage.label === "&laquo; Previous"
-            ? "Anterior"
+            ? "<"
             : itemPage.label;
+    let stateHove = itemPage.url !== null ? "buttonPage hov" : "buttonPage";
 
     return (
         <>
             <button
                 href={itemPage.url}
                 onClick={() => clickUrl(itemPage.url)}
-                className={`buttonPage ${itemPage.active ? "active" : ""}`}
+                className={`${stateHove} ${itemPage.active ? "active" : ""}`}
                 disabled={itemPage.url ? "" : "disabled"}
             >
                 <span>{label}</span>

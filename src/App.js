@@ -6,6 +6,7 @@ import { Home } from "./views/home/Home";
 import { Posts } from "./views/posts/Posts";
 import { Categories } from "./views/categories/Categories";
 import { PaginatorProvider } from "./components/contexts/PaginatorContext";
+import { EditPost } from "./views/editPost/EditPost";
 
 function App() {
     return (
@@ -24,8 +25,9 @@ function App() {
                                     component={Posts}
                                 />
                                 <Route
-                                    path="/entradas/pagina/:number"
-                                    component={Posts}
+                                    path="/entrada/editar/:id"
+                                    exact
+                                    component={EditPost}
                                 />
                                 <Route
                                     path="/categorias"

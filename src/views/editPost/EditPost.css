@@ -1,0 +1,6 @@
+.form_edit_post {
+    display: flex;
+    flex-direction: column;
+    margin: 0.8rem;
+    width: 100%;
+}
